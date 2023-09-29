@@ -1,6 +1,12 @@
 import { cva } from '../../styled-system/css'
 
-const SidebarTabComponent = cva({
+export type SidebarTabProps = {
+  status: 'Selected' | 'Inactive' | 'Highlighted',
+  label: string,
+  icon: React.ReactNode,
+}
+
+export const VividSidebarTab = cva({
     base: {
         display: 'flex',
         flexDirection: 'column',
@@ -24,7 +30,7 @@ const SidebarTabComponent = cva({
     }
 })
 
-const Inbox = cva({
+export const VividInbox = cva({
     base: {
         fontSize: '15px',
         fontWeight: 300,
@@ -45,7 +51,7 @@ const Inbox = cva({
     }
 })
 
-const Content = cva({
+export const VividContent = cva({
     base: {
         display: 'flex',
         alignItems: 'center',
