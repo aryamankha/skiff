@@ -17,7 +17,7 @@ const SidebarTabStyles = sva({
             alignItems: 'flex-start',
             height: 'fit-content',
             padding: '0px 6px',
-            width: '239px',
+            width: '100%',
         },
         inbox: {
             fontSize: '15px',
@@ -44,7 +44,7 @@ const SidebarTabStyles = sva({
                     color: 'rgb(255, 255, 255)',
                 },
                 content: {
-                    backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                    backgroundColor: 'rgb(41, 41, 41)',
                 },
             },
             Inactive: {
@@ -80,7 +80,7 @@ const { withProvider, withContext } = createStyleContext(SidebarTabStyles)
 
 const Root = withProvider("div", "root");
 
-const Inbox = withProvider("div", "inbox");
+const Inbox = withContext("p", "inbox");
 
 const Content = withContext("div", "content");
 

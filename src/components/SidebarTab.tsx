@@ -1,13 +1,15 @@
 import React from "react";
-import { VividSidebarTab, type SidebarTabProps } from "./SidebarTab.sva";
+import { SidebarTab, type SidebarTabProps } from "./SidebarTab.style";
 
-export const SidebarTab = (props: SidebarTabProps) => {
+const SidebarTabComponent = (props: SidebarTabProps) => {
   return (
-    <VividSidebarTab.Root status={props.status}>
-      <VividSidebarTab.Content>
+    <SidebarTab.Root status={props.status}>
+      <SidebarTab.Content>
         {props.icon}
-        <VividSidebarTab.Inbox>{props.label}</VividSidebarTab.Inbox>
-      </VividSidebarTab.Content>
-    </VividSidebarTab.Root>
+        <SidebarTab.Inbox>{props.label}</SidebarTab.Inbox>
+      </SidebarTab.Content>
+    </SidebarTab.Root>
   );
 };
+
+export { SidebarTabComponent as SidebarTab };
