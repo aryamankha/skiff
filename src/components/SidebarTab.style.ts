@@ -8,7 +8,7 @@ export type SidebarTabProps = {
     icon: React.ReactNode,
 }
 
-const SidebarTab = sva({
+const SidebarTabStyles = sva({
     slots: ["root", "inbox", "content"],
     base: {
         root: {
@@ -76,7 +76,7 @@ const SidebarTab = sva({
     }
 })
 
-const { withProvider, withContext } = createStyleContext(SidebarTab)
+const { withProvider, withContext } = createStyleContext(SidebarTabStyles)
 
 const Root = withProvider("div", "root");
 
@@ -84,4 +84,4 @@ const Inbox = withProvider("div", "inbox");
 
 const Content = withContext("div", "content");
 
-export const VividSidebarTab = { Root, Inbox, Content};
+export const SidebarTab = { Root, Inbox, Content};
