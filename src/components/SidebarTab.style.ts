@@ -1,10 +1,14 @@
+import React from 'react'
 import { sva } from '../../styled-system/css'
+import { createStyleContext } from '../style-contexts'
 
 export type SidebarTabProps = {
-    status: 'Selected' | 'Inactive' | 'Highlighted'
+    status: 'Selected' | 'Inactive' | 'Highlighted',
+    label: string,
+    icon: React.ReactNode,
 }
 
-export const SidebarTab = sva({
+const SidebarTab = sva({
     slots: ["root", "inbox", "content"],
     base: {
         root: {
@@ -71,3 +75,13 @@ export const SidebarTab = sva({
         },
     }
 })
+
+const { withProvider, withContext } = createStyleContext(SidebarTab)
+
+const Root = withProvider("div", "root");
+
+const Inbox = withProvider("div", "inbox");
+
+const Content = withContext("div", "content");
+
+export const VividSidebarTab = { Root, Inbox, Content};
