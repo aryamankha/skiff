@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a NextJS project intended to serve as an example of Vivid's code generation. For more information on Vivid's styling philosophy, check out our [docs](https://docs.vivid.lol). 
 
 ## Getting Started
 
