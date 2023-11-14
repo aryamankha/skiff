@@ -1,4 +1,4 @@
-This is a NextJS project intended to serve as an example of Vivid's code generation. For more information on Vivid's styling philosophy, check out our [docs](https://docs.vivid.lol).
+This is a NextJS project intended to serve as a very simple example of Vivid's code generation in a real-world setting. For more information on Vivid's styling philosophy, check out our [docs](https://docs.vivid.lol).
 
 The synced component is [SidebarTab](https://github.com/aryamankha/skiff/tree/main/src/components). 
 
