@@ -1,4 +1,6 @@
-This is a NextJS project intended to serve as an example of Vivid's code generation. For more information on Vivid's styling philosophy, check out our [docs](https://docs.vivid.lol). 
+This is a NextJS project intended to serve as an example of Vivid's code generation. For more information on Vivid's styling philosophy, check out our [docs](https://docs.vivid.lol).
+
+The synced component is [SidebarTab](https://github.com/aryamankha/skiff/tree/main/src/components). 
 
 This example corresponds to [this Figma file](https://www.figma.com/file/6k434NG3P8zmZbUdKCHUqX/Skiff?type=design&node-id=0%3A1&mode=design&t=sbleukCAmNqQuHOX-1). 
 
